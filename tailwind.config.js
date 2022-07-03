@@ -4,10 +4,12 @@ module.exports = {
 	darkMode: 'class',
 	theme: {
 		darkSelector: '.dark-mode',
-        colors: {
-			primary: {
-				'light': '#fdf0d5',
-				'dark': '#3a3335'
+		extend: {
+			colors: {
+				primary: {
+					'light': '#fdf0d5',
+					'dark': '#3a3335'
+				}
 			}
 		}
     },
