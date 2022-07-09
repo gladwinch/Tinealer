@@ -3,7 +3,7 @@
 		<Appbar />
 		<div class="dashboard">
 			<div class="bg-primary-light">
-				sidebar
+				<Sidebar />
 			</div>
 			<Nuxt />
 		</div>
@@ -12,10 +12,12 @@
 
 <script>
 	import Appbar from '@/components/Appbar.vue'
+	import Sidebar from '@/components/Sidebar.vue'
 
 	export default {
 		components: {
-			Appbar
+			Appbar,
+			Sidebar
 		}
 	}
 </script>

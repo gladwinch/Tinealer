@@ -1,12 +1,12 @@
 <template>
-	<div class="bg-green-400 p-4">
-		Dashboards
+	<div class="bg-yellow-200 p-4">
+		<h1>Training</h1>
 	</div>
 </template>
 
 <script>
 	export default {
-		name: 'Dashboard',
+		name: 'Training',
 		layout: 'dashboard'
 	}
 </script>

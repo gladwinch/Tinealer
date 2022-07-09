@@ -1,14 +1,28 @@
 <template>
 	<div class="app-bar bg-red-400 dark:bg-black">
 		<div>logo</div>
-		<div>logout</div>
+		<div>
+			<button class="btn border border-white capitalize" @click="changeMode">
+				Theme {{ btnLabel }}
+			</button>
+		</div>
 	</div>
 </template>
 
 <script>
-export default {
-
-}
+	export default {
+		computed: {
+			btnLabel() {
+				return this.$colorMode.preference === 'light' ? 'dark' : 'light'
+			}
+		},
+		methods: {
+			changeMode() {
+				this.$colorMode.preference = 
+					this.$colorMode.preference === 'light' ? 'dark' : 'light'
+			}
+		}
+	}
 </script>
 
 <style scoped>
